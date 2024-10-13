@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Adventures Remake Using Tailwind CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center min-h-screen bg-cover bg-center bg-fixed" style="background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=600');">
+  <div class="container max-w-4xl bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg overflow-hidden flex flex-col lg:flex-row">
+    
+
+    <div class="sidebar bg-purple-700 bg-opacity-20 backdrop-blur-md p-6">
+      <ul>
+        <li><a href="#" class="text-white text-lg block p-3 hover:bg-opacity-10 hover:bg-white transition rounded-lg"><i class="fas fa-home mr-2"></i> Home</a></li>
+        <li><a href="#" class="text-white text-lg block p-3 hover:bg-opacity-10 hover:bg-white transition rounded-lg"><i class="fas fa-plane mr-2"></i> Destinations</a></li>
+        <li><a href="#" class="text-white text-lg block p-3 hover:bg-opacity-10 hover:bg-white transition rounded-lg"><i class="fas fa-calendar-alt mr-2"></i> Packages</a></li>
+        <li><a href="#" class="text-white text-lg block p-3 hover:bg-opacity-10 hover:bg-white transition rounded-lg"><i class="fas fa-info-circle mr-2"></i> About Us</a></li>
+        <li><a href="#" class="text-white text-lg block p-3 hover:bg-opacity-10 hover:bg-white transition rounded-lg"><i class="fas fa-envelope mr-2"></i> Contact</a></li>
+      </ul>
+    </div>
+    
+   
+    <main class="main-content flex-1 p-6 overflow-y-auto">
+     
+      <nav class="flex justify-between items-center mb-8">
+        <div class="text-xl font-bold text-teal-400">Wanderlust Adventures</div>
+        <div class="search-container relative">
+          <input type="text" class="search-bar p-3 w-48 sm:w-64 bg-white bg-opacity-10 text-white rounded-full focus:w-80 transition placeholder-opacity-75" placeholder="Search destinations..." />
+          <i class="fas fa-search search-icon absolute right-3 top-1/2 transform -translate-y-1/2 text-teal-400"></i>
+        </div>
+      </nav>
+
+      
+      <div class="slideshow relative h-72 mb-8 rounded-lg overflow-hidden">
+        <img src="https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Destination 1" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 ease-in-out">
+        <img src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Destination 2" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 ease-in-out">
+        <img src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Destination 3" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 ease-in-out">
+      </div>
+      
+      
+      <div class="agency-name bg-blue-600 bg-opacity-30 p-4 text-center rounded-lg mb-8">
+        <h2 class="text-xl text-white font-semibold">Wanderlust Adventures</h2>
+        <p class="text-white opacity-80">Explore the world with us!</p>
+      </div>
+
+      <div class="main-card bg-white bg-opacity-10 p-6 rounded-lg mb-8 text-white">
+        <h2 class="text-2xl mb-4">Welcome to Wanderlust Adventures</h2>
+        <p class="mb-4">Embark on a journey of a lifetime with Wanderlust Adventures. We specialize in creating unforgettable travel experiences tailored to your desires.</p>
+        <p class="mb-4">Our expert team of travel enthusiasts is dedicated to curating the perfect itinerary for you. Whether you're seeking a relaxing beach getaway, an adventurous mountain expedition, or a cultural city tour, we have the perfect package for you.</p>
+        <p>With Wanderlust Adventures, you'll discover hidden gems, immerse yourself in local cultures, and create memories that will last a lifetime. Let us take care of the details while you focus on enjoying your dream vacation.</p>
+      </div>
+
+      
+      <div class="side-cards flex flex-col gap-4">
+        <div class="side-card bg-white bg-opacity-10 p-4 rounded-lg">
+          <h3 class="text-lg text-white mb-2">Special Offers</h3>
+          <p class="text-white opacity-80">Check out our latest deals and discounts on popular destinations!</p>
+        </div>
+        <div class="side-card bg-white bg-opacity-10 p-4 rounded-lg">
+          <h3 class="text-lg text-white mb-2">Travel Tips</h3>
+          <p class="text-white opacity-80">Get expert advice on packing, local customs, and must-visit attractions.</p>
+        </div>
+      </div>
+      
+   
+      <footer class="text-center mt-8 p-4 cursor-pointer text-white">
+        Click here to contact us
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
